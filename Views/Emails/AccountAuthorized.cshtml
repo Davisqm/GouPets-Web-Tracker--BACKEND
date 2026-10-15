@@ -1,0 +1,26 @@
+@using PetsApi.ViewModels
+@model AccountAuthorizedViewModel
+
+@{
+  Layout = "_EmailLayoutHtml";
+}
+
+<p>
+  Your account has been authorized.
+</p>
+@* <table>
+  <tr>
+    <td>
+      <b>User name: </b>
+    </td>
+    <td>@Model.User.Name</td>
+  <tr>
+  <tr>
+    <td>
+      <b>Email: </b>
+    </td>
+    <td>@Model.User.Email</td>
+  <tr>
+</table> *@
+
+@await Html.PartialAsync("_EmailButton", new EmailButtonViewModel("Open dashboard", Model.WebUrl, "/"))

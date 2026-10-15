@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20200503233909_MigrationName.cs" />
+    <Compile Remove="Migrations\20200503233909_MigrationName.Designer.cs" />
+    <Compile Remove="Migrations\20200503234147_MigrationTMSTuria.cs" />
+    <Compile Remove="Migrations\20200503234147_MigrationTMSTuria.Designer.cs" />
+    <Compile Remove="Migrations\20200504001403_TuriaTMS_V1.cs" />
+    <Compile Remove="Migrations\20200504001403_TuriaTMS_V1.Designer.cs" />
+    <Compile Remove="Migrations\20200504013905_Migration0010.cs" />
+    <Compile Remove="Migrations\20200504013905_Migration0010.Designer.cs" />
+    <Compile Remove="Migrations\20200505040619_PluralModels.cs" />
+    <Compile Remove="Migrations\20200505040619_PluralModels.Designer.cs" />
+    <Compile Remove="Migrations\20200514160750_AddShipmentPoStatus.cs" />
+    <Compile Remove="Migrations\20200514160750_AddShipmentPoStatus.Designer.cs" />
+    <Compile Remove="Migrations\20200521205614_FixPlantIds.cs" />
+    <Compile Remove="Migrations\20200521205614_FixPlantIds.Designer.cs" />
+    <Compile Remove="Migrations\20200527185128_AddFieldsToShipmentTable.cs" />
+    <Compile Remove="Migrations\20200527185128_AddFieldsToShipmentTable.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="NETCore.MailKit" Version="2.0.3" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include=".\Data\Queries\**\*" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+</Project>

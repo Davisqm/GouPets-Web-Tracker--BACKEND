@@ -1,0 +1,26 @@
+@using PetsApi.ViewModels
+@model DocumentsRequestedViewModel
+
+@{
+  Layout = "_EmailLayoutHtml";
+}
+
+<p>
+  Documents have been requested to be sent. please log in to your account in the My Profile section.
+</p>
+@* <table>
+  <tr>
+    <td>
+      <b>User name: </b>
+    </td>
+    <td>@Model.User.Name</td>
+  <tr>
+  <tr>
+    <td>
+      <b>Email: </b>
+    </td>
+    <td>@Model.User.Email</td>
+  <tr>
+</table> *@
+
+@await Html.PartialAsync("_EmailButton", new EmailButtonViewModel("Open My Profile", Model.WebUrl, "profile"))
